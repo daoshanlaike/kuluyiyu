@@ -1,0 +1,17 @@
+}
+function slideshow( slideshowname ) {
+  this.name = slideshowname;
+  this.repeat = true;
+  this.prefetch = -1;
+  this.image;
+  this.textid;
+  this.textarea;
+  this.timeout = 5000;
+  this.slides = new Array();
+  this.current = 0;
+  this.timeoutid = 0;
+  this.add_slide = function(slide) {
+    var i = this.slides.length;
+    if (this.prefetch == -1) {
+      slide.load();
+    }
