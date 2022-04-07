@@ -1,0 +1,8 @@
+    this.update();
+  }
+  this.previous = function() {
+    if (this.current > 0) {
+      this.current--;
+    } else if (this.repeat) {
+      this.current = this.slides.length - 1;
+    }
