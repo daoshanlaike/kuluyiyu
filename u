@@ -1,0 +1,6 @@
+      if (slide.text) {
+        all_text += before_slide + slide.text + after_slide;
+      }
+    }
+    return(all_text);
+  }
