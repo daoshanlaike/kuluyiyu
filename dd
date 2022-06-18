@@ -1,0 +1,5 @@
+  this.update();
+  }
+  this.shuffle = function() {
+    var i, i2, slides_copy, slides_randomized;
+    slides_copy = new Array();
