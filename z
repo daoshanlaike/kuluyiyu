@@ -1,0 +1,8 @@
+this.goto_random_slide = function(include_current) {
+    var i;
+    if (this.slides.length > 1) {
+      do {
+        i = Math.floor(Math.random()*this.slides.length);
+      } while (i == this.current);
+      this.goto_slide(i);
+    }
